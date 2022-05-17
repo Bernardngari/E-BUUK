@@ -5,32 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   <title>Login page</title>
+  <link href="/css/login.css" type="text/css" rel="stylesheet">
+  <script src="/js/login.js"></script>
+
 </head>
 <body>
 
   <header>
-
+    <!--Waiting for header code-->
   </header>
 
   <div id="logo" style="background-color: #EEA820;">
-    <h1>E-B<span id="red">UU</span>K</h1>
+    <div id="p1">E-B<span id="red">UU</span>K</div>
   </div>
 
-  <div id="contain" style="background-color: #89793F;">
+  <div id="contain" style="background-color: #89793F;" >
     
     <div id="buuk" style="background-color: #EEA820;">
-      <p>E-B<span id="red">UU</span>K YOUR RIDE</p>
+      <p id="p2">E-B<span id="red">UU</span>K YOUR RIDE</p>
     </div>
 
-    <form>
-      <label for="email">Email address</label><br>
+    <form id="form">
+      <label for="email" id="cred">Email address</label><br>
       <input type="email" id="email" value="example@example.com"><br><br>
-      <label for="password">Enter password</label><br>
+      <label for="password" id="cred">Enter password</label><br>
       <input type="password" id="password" value="********"><br><br>
-      <button type="button" id="Login" style="background-color: green;">Login</button>
+      <button type="button" id="Login" onclick="login()">Log in</button>
     </form>
 
   </div>
+
+  <footer>
+    <!--Waiting for footer code-->
+  </footer>
   
 </body>
 </html>
