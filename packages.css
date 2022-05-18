@@ -6,5 +6,31 @@
     grid-template-columns: repeat(3,1fr);
     margin-top: 100px;
     margin-left: 200px;
-
 }
+.basic{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+    margin-left: 50px;  
+}
+#starter{
+    border: solid black;
+   padding: 10px;
+   margin: 30px;
+   border-radius: 20px;
+   border margin-left: 5px;
+}
+.pack{
+   margin-left: 725px;
+}
+hr{
+    width: 200px;
+    margin-top: 50px;
+    height: 3px;
+    background-image: linear-gradient(to right, orange ,black);
+    border: none;
+}
+.ellipse{
+    display: flex;
+    margin-left: 650px;
+    margin-top: 50px;
