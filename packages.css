@@ -34,3 +34,22 @@ hr{
     display: flex;
     margin-left: 650px;
     margin-top: 50px;
+}
+.work > h2{
+    text-align: center;
+    margin-top: 5px;
+}
+.work > #hry{
+    margin-top: 5px;
+}
+.work > #hrx{
+    margin-top: 5px;
+    margin-left: 800px;
+}
+.work > ul{
+    text-align: center;
+    list-style-type: none;
+}
+.work{
+    margin-bottom: 100px;
+}
