@@ -1,3 +1,50 @@
+*{
+  margin: 0;
+}
+.navlist{
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 100px;
+  
+  
+}
+.navlist>li{
+  float: left;
+}
+.navlist>li>a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: white;
+}
+
+
+
+
+.containerheader{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.navlist>ul{}
+
+  
+
+
+
+.containerheader>h1{
+  color: 
+  #FFA500;
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+
 #red{
   color: red;
 }
@@ -57,8 +104,7 @@ form{
   background-color: #EEA820;
 }
 
-  
-
+ 
 
 
 
