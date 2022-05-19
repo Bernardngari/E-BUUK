@@ -39,12 +39,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
   }
-  
+  h1{
+      padding-bottom: 70px;
+      font-family: 'Roboto', sans-serif;
+  }
   html,
   body {
+    display: grid;     
     font-family: "Nunito Sans", sans-serif;
     line-height: 2rem;
+    background-color: white;
   }
   
   .wrapper {
@@ -66,4 +72,115 @@
     justify-content: center;
     font-size: large;
     font-weight: 600;
+}
+.box{
+    margin-top: 200px;
+    margin-left: 500px;
+    padding: 32px;
+}
+.select-box{
+    position: relative;
+    display: flex;
+    width: 250;
+    flex-direction: column;
+}
+.option-container{
+    background: white;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+    color: rgb(56, 52, 52);
+    opacity: 0;
+}
+.option, .selected{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.select-box .option .radio{
+    display: none;
+}
+.selected{
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: rgb(56, 52, 52);
+    position: relative;
+    order: 0;
+}
+.selected:after{
+    content: '\f106';
+    position: absolute;
+    right: 20px;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700;
+    color: black;
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+.select-box .option:hover{
+    background: #F1FFF3;
+    border-radius: 5px;
+    color: #8AD891;
+}
+.select-box input{
+    width: 100%;
+    padding: 16px 16px;
+    position: absolute;
+    z-index: 100;
+    border: none;
+    font-size: 16px;
+    outline: 2px solid hsl((240deg), 7% 62%);
+    outline-offset: -10px;
+}
+#option{
+    margin-top: 45px;
+}
+.search-box .option-container .active{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    transition: all 0.4s;
+}
+.active{
+    opacity: 1;
+    max-height: 240px;
+    overflow-y: scroll;
+    transition: all 0.4s;
+}
+.active ~ .selected:after{
+    transform: rotate(180deg);
+}
+.active ~ .search-box input{
+    opacity: 1;
+    pointer-events: none;
+}
+.option-container::-webkit-scrollbar{
+    background: #888;
+    border-radius: 8px;
+    width: 7px;
+}
+.option-container::-webkit-scrollbar-thumb{
+    background: #464749;
+    border-radius: 8px;
+}
+.footer{
+    height: 400px;
+    border: solid black;
+    color: #fff;
+    background-color:black;
+
+}
+.content{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto ));
+}
+.iconfooter{
+    display: flex ;
+    color: #fff; 
+    margin-top: 80px; 
+    gap: 20px;
 }
