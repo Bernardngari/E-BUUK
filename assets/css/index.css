@@ -168,4 +168,17 @@ body{
   gap: 20px;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #FFA500;
+}
+
+.navlist>li>a:hover{
+color: #EEA820;
+}
+
   

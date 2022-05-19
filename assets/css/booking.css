@@ -22,9 +22,7 @@
     justify-content: space-between;
     
   }
-  .navlist>ul{
-      border: ;
-  }
+  .navlist>ul{}
   
   .containerheader>h1{
     color: 
@@ -183,4 +181,17 @@
     color: #fff; 
     margin-top: 80px; 
     gap: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #FFA500;
+}
+
+.navlist>li>a:hover{
+color: #EEA820;
 }

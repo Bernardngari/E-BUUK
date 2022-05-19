@@ -50,7 +50,7 @@ nav> .logo{
    border-radius: 20px;
    margin-left: 5px;
    background-color:orange;
-   color: #fffff;
+   color: #fff;
 }
 .pack{
    margin-left: 725px;
@@ -167,3 +167,18 @@ body{
     padding: 30px;
     margin-right: 20px;
     background-color: #FFA500;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #FFA500;
+}
+
+.navlist>li>a:hover{
+color: #EEA820;
+}

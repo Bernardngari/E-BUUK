@@ -1,8 +1,10 @@
-function logincheck() {
+function logincheck ()
+{
   let v = document.getElementById( "email" ).value;
   let ps = document.getElementById( "password" ).value;
-  if (v == "") {
-    alert("Email must be filled out");
+  if ( v == "" )
+  {
+    alert( "Email must be filled out" );
     /*return false;*/
   }
 
@@ -12,10 +14,13 @@ function logincheck() {
     return false;
   }
 
-  if (ps=="") {
-    alert("Please enter password")
+  if ( ps == "" )
+  {
+    alert( "Please enter password" )
   }
-  if (ps=="" && v=="") {
-    alert("All credentials must be filled in")
+  if ( ps == "" && v == "" )
+  {
+    alert( "All credentials must be filled in" )
   }
-}
+  
+  }
