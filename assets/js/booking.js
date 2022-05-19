@@ -1,12 +1,12 @@
 const selected= document.querySelector(".selected");
-const optionContainer = document.querySelector(".options-container");
+const optionContainer = document.querySelector(".option-container");
 const searchBox = document.querySelector(".search-box input");
 const optionList = document.querySelectorAll(".option");
 selected.addEventListener("click",()=>{
     optionContainer.classList.toggle("active");
     searchBox.value="";
     FileList("");
-    if(optionsContainer.classList.contains("active")){
+    if(optionContainer.classList.contains("active")){
         searchBox.focus();
     }
 });
