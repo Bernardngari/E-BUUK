@@ -38,8 +38,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
+    /*box-sizing: border-box;*/
   }
   h1{
       padding-bottom: 70px;
@@ -47,10 +46,9 @@
   }
   html,
   body {
-    display: grid;     
+    display: grid; 
     font-family: "Nunito Sans", sans-serif;
     line-height: 2rem;
-    background-color: white;
   }
   
   .wrapper {
@@ -85,7 +83,7 @@
     flex-direction: column;
 }
 .option-container{
-    background: white;
+    background: rgb(136, 133, 133);
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -101,7 +99,7 @@
     display: none;
 }
 .selected{
-    background: white;
+    background: black;
     border-radius: 8px;
     margin-bottom: 8px;
     color: rgb(56, 52, 52);
