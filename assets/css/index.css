@@ -56,10 +56,12 @@
   background-color: white;
 width: 50%;
 margin: 0 auto;
-border: solid 2px black;
+/*border: solid 2px black;*/
 border-radius: 20px;
 min-width: 400px;
 max-width: 500px;
+box-shadow: 5px 5px 5px orange;
+background-color: orange;
 }
 .asidecontainer>p,h2{
   margin-left: 80px;
@@ -67,7 +69,10 @@ max-width: 500px;
 }
 .asidecontainer>h2{
   font-size: 16px;
-  font-weight: 1000;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px orange;
+  width: 20%;
+  border-radius: 5px;
 }
 
 
@@ -75,6 +80,7 @@ max-width: 500px;
 
 #button{
   background-color: green;
+  
 }
 
 
@@ -90,34 +96,52 @@ max-width: 500px;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  
+  border-radius: 10px;
+  
 }
 .cont-staff>div>img{
   width: 100%;
   height: 100px;
   border-radius: 50%;
-  border: solid rgba(0, 0, 0, 0.911) 1px;
+ /* border: solid rgba(0, 0, 0, 0.911) 1px;*/
+  box-shadow: 5px 5px 5px orange;
+}
+aside>h2{
+  font-size: 16px;
+
+  
 }
 
 
 
 body{
-  background-color: #FFA500;
+ /* background-color: #FFA500;*/
+
+ background-color: F6F8E8;
 }
 .cont-bus>img{
-  border: solid black ;
+ /* border: solid black 1px; */
   border-radius: 20px;
-  
+  box-shadow: 5px 5px 5px orange;
 }
 .cont-sign-up>form>input{
-  border: solid black ;
- 
-  border-radius: 10px;
-  margin-bottom: 5px;
+  border: 1px;
+ border-radius: 20px;
+ margin-bottom: 10px;
+ box-shadow: 2px 2px;
+  
 
 }
 .cont-sign-up>h2{
   font-size: 16px;
   font-weight: 1000;
+}
+.cont-sign-up{
+  
+  box-shadow: 5px 5px 5px orange;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 
@@ -143,4 +167,18 @@ body{
   margin-top: 80px; 
   gap: 20px;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #FFA500;
+}
+
+.navlist>li>a:hover{
+color: #EEA820;
+}
+
   
