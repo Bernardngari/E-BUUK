@@ -7,14 +7,16 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="../assets/css/booking.css" rel="stylesheet">
 </head>
 <body>
@@ -38,57 +40,79 @@
         <div class="wrapper">
         <div class="item-container main-item">
           <div class="item item-left">
-            <img
-              src="../assets/images/Vector.svg"
-              style="max-width: 30rem"
-            />
+            <img src="../assets/images/Vector.svg" style="max-width: 30rem"/>
           </div>
           <div class="item-phrase">
-              <h1></h1>Quick and Easy to<br>Travel Anywhere<br>and anytime</h1>
+              <h1>Quick and Easy to<br>Travel Anywhere<br>and anytime</h1>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d510564.646698354!2d36.847397!3d-1.303209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1652945329017!5m2!1sen!2ske" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="container-fluid bg-white pt-3 px-lg-5">
-                <div class="row mx-n2">
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <select class="custom-select px-4 mb-3" style="height: 50px;">
-                            <option selected>Pickup Location</option>
-                            <option value="1">Rongai</option>
-                            <option value="2">Buruburu</option>
-                            <option value="3">CBD</option>
-                        </select>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <select class="custom-select px-4 mb-3" style="height: 50px;">
-                            <option selected>Dropoff Location</option>
-                            <option value="1">Rongai</option>
-                            <option value="2">Buruburu</option>
-                            <option value="3">CBD</option>
-                        </select>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <div class="date mb-3" id="date" data-target-input="nearest">
-                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
-                                data-target="#date" data-toggle="datetimepicker" />
+            <!--Pickup search-->
+            <div class="box">
+                <div class="select-box">
+                    <div class="option-container">
+                        <div class="option" id="option1">
+                            <input type="radio" class="radio">
+                            <label for="Pick up">Rongai</label>
                         </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <div class="time mb-3" id="time" data-target-input="nearest">
-                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
-                                data-target="#time" data-toggle="datetimepicker" />
+
+                        <div class="option">
+                            <input type="radio" class="radio" id="option1">
+                            <label for="Pick up">Buruburu</label>
                         </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="option1">
+                            <label for="Pick up">Ngong</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="option1">
+                            <label for="Pick up">CBD</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="option1">
+                            <label for="Pick up">Kangemi</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="option1">
+                            <label for="Pick up">Roysambu</label>
+                        </div> 
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <select class="custom-select px-4 mb-3" style="height: 50px;">
-                            <option selected>Select A Car</option>
-                            <option value="1">Car 1</option>
-                            <option value="2">Car 1</option>
-                            <option value="3">Car 1</option>
-                        </select>
+                    <div class="selected">
+                        Your current location
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                        <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+                    <div class="Search-box">
                     </div>
                 </div>
             </div>
-            <!-- Search End -->
+            <script src="../assets/js/booking.js"></script>
+ <!-- Search End -->
+<!--footer-->
+<div class="footer">
+    <div class="content">
+        <div class="contact">
+            <div>
+            <h3>Contact Us<h3/><br>
+               <h4>Tel: 0700000000</h4>
+               <h4>Email: info@e-buuk.com</h4>
+            </div>
+            <div class="iconfooter">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
+            </div>
+        </div>
+        <div class="faq">
+            <h3>FAQ</h3>
+        </div>
+        <div class="packagera">
+            <h3>packages</h3>
+        </div>
+        <div class="promo">
+            <h3>promos</h3>
+        </div>
+        <div class="book">
+            <h3>Book a ride</h3>
+        </div>
+    </div>
+    </div>
 </body>
+</html>
